@@ -5,7 +5,7 @@ import App from './App.jsx'
 import AboutPage from './pages/AboutPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import PortfolioPage from './pages/PortfolioPage.jsx';
-// import './index.css'
+import './index.css'
 
 const router = createBrowserRouter([
   {
