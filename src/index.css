@@ -1,3 +1,24 @@
-body {
-  background-color: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+.footer {
+  background-color:aqua
+}
+
+nav {
+ background-color:blueviolet
+}
+
+.body {
+  background-color:chartreuse;
+  flex-grow: 1;
+}
+
+.mainParent {
+  min-height: 100vh;
+  display: flex;
+  flex-direction:column;
 }
