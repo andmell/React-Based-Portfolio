@@ -22,3 +22,17 @@ nav {
   display: flex;
   flex-direction:column;
 }
+
+.cardBox {
+  border: 2px #333 solid;
+  width: 302px
+}
+
+.projectBody{
+  display: flex;
+}
+
+.cardImg {
+  width: 300px;
+  height: 200px;
+}
