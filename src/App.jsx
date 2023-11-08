@@ -8,7 +8,7 @@ function App() {
       <Header />
       <div className="bg-blue-300 flex"><Nav /></div>
       <div className='grow bg-blue-950'><Outlet/></div>
-      <Footer />
+      <div className="bg-blue-300"><Footer /></div>
     </div>
   );
 }

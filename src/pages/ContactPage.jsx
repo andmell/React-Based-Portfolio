@@ -1,59 +1,89 @@
 export default function ContactPage() {
-    return (
-      <div className="container pt-4">
-        <p>
-          Contact
-        </p>
-        <section className="features-icons bg-light text-center m-4">
-          <div className="container">
-            <div className="row p-2">
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-window m-auto text-primary" />
-                  </div>
-                  <h3>Fully Responsive</h3>
-                  <p className="lead mb-0">
-                    This theme will look great on any device, no matter the size!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-layers m-auto text-primary" />
-                  </div>
-                  <h3>Bootstrap 5 Ready</h3>
-                  <p className="lead mb-0">
-                    Featuring the latest build of the new Bootstrap 5 framework!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-terminal m-auto text-primary" />
-                  </div>
-                  <h3>Easy to Use</h3>
-                  <p className="lead mb-0">
-                    Ready to use with your own content, or customize the source
-                    files!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-          impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-          architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-          mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-          nostrum temporibus ad omnis nam rerum eligendi.
-        </p>
-      </div>
-    );
-  }
-  
+  return (
+    <div className="flex justify-items-center items-center">
+    <div className="py-2 px-4 mx-auto max-w-screen-md bg-white border rounded"> 
+            <h2 className="mb-4 text-4xl font-extrabold  
+                           text-center text-gray-900"> 
+                Contact Me
+            </h2> 
+            <p className="mb-4 font-light text-left  
+                          text-gray-500 sm:text-xl"> 
+                Want to get in touch? Leave your info and I'll get back to you as soon as possible! 
+            </p> 
+            <form action="#"> 
+                <div className="flex flex-row"> 
+                    <div className="w-1/2 pr-2 "> 
+                        <label for="firstName" 
+                               className="block my-2 text-left  
+                                          text-sm font-medium text-gray-900"> 
+                            First Name 
+                        </label> 
+                        <input type="text" 
+                               className="shadow-sm bg-gray-50 border 
+                                          border-gray-300 text-gray-900  
+                                          text-sm rounded-lg block w-full p-2.5" 
+                               placeholder="Enter First Name"
+                               required/> 
+                    </div> 
+                    <div className="w-1/2 pl-2"> 
+                        <label for="firstName" 
+                               className="block my-2 text-left text-sm  
+                                          font-medium text-gray-900"> 
+                            Last Name 
+                        </label> 
+                        <input type="text" 
+                               className="shadow-sm bg-gray-50 border  
+                                          border-gray-300 text-gray-900  
+                                          text-sm rounded-lg block w-full p-2.5"
+                               placeholder="Enter Last Name"/> 
+                    </div> 
+                </div> 
+                <div> 
+                    <label for="email" 
+                           className="block my-2 text-left text-sm  
+                                      font-medium text-gray-900"> 
+                        Your email 
+                    </label> 
+                    <input type="email" 
+                           className="shadow-sm bg-gray-50 border  
+                                      border-gray-300 text-gray-900  
+                                      text-sm rounded-lg block w-full p-2.5" 
+                           placeholder="abc@geeksforgeeks.org" 
+                           required /> 
+                </div> 
+                <div> 
+                    <label for="subject" 
+                           className="block my-2 text-left  
+                                      text-sm font-medium text-gray-900"> 
+                        Subject 
+                    </label> 
+                    <input type="text" 
+                           className="block p-3 w-full text-sm  
+                                      text-gray-900 bg-gray-50 rounded-lg  
+                                      border border-gray-300 shadow-sm "
+                           placeholder="You look like a great candidate!" 
+                           required /> 
+                </div> 
+                <div > 
+                    <label for="message" 
+                           className="block my-2 text-left  
+                                      text-sm font-medium text-gray-900 "> 
+                        Your message 
+                    </label> 
+                    <textarea rows="6" 
+                              className="block p-2.5 w-full text-sm  
+                                         text-gray-900 bg-gray-50 rounded-lg  
+                                         shadow-sm border border-gray-300 " 
+                              placeholder="Content goes here..."/> 
+                </div> 
+                <button type="submit" 
+                        className="mt-2 p-2 float-right text-white   
+                                   rounded-lg border-green-600  
+                                   bg-green-600 hover:scale-105"> 
+                    Send message 
+                </button> 
+            </form> 
+        </div> 
+        </div>
+  );
+}

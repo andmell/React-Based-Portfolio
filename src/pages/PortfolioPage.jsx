@@ -26,8 +26,8 @@ const projects = [
 export default function PortfolioPage() {
   return (
     <div>
-      <h2>Projects</h2>
-      <div class='projectBody'>
+      <h2 className="text-center text-3xl">Projects</h2>
+      <div class='flex flex-row justify-center'>
         {projects.map((project) => {
           return <Card project={project}/>
         })}
