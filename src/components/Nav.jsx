@@ -8,18 +8,14 @@ const links = [
 export default function Nav() {
   const location = useLocation();
   return (
-    <nav className="nav">
-      {/* <div className="container-fluid"> */}
-        {/* <div className="collapse navbar-collapse" id="navbarSupportedContent"> */}
-          <ul className="">
+    <nav className="">
+          <ul className="flex flex-row">
             {links.map((link) => (
-              <li className={location.pathname === link.slug ? "active" : ""}>
+              <li className={location.pathname === link.slug ? "active p-2 bg-blue-100 rounded-lg" : "p-2"}>
                 <Link to={link.slug}>{link.text}</Link>
               </li>
             ))}
           </ul>
-        {/* </div> */}
-      {/* </div> */}
     </nav>
   );
 }

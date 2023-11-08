@@ -1,5 +1,5 @@
 export default function Footer(){
     return (
-        <div className='footer'>This is the footer</div>
+        <div className='footer'>Links to Github, LinkedIn, StackOverflow</div>
     );
 }

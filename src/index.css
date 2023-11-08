@@ -1,19 +1,26 @@
-* {
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/* * {
   padding: 0;
   margin: 0;
   box-sizing:border-box;
 }
 
 .footer {
-  background-color:aqua
+  background-color:rgb(107, 149, 240)
 }
 
 nav {
- background-color:blueviolet
+ background-color:rgb(107, 149, 240)
+}
+.navbar {
 }
 
 .body {
-  background-color:chartreuse;
+  background-color:rgba(107, 149, 240, 0.664);
   flex-grow: 1;
 }
 
@@ -35,4 +42,4 @@ nav {
 .cardImg {
   width: 300px;
   height: 200px;
-}
+} */
