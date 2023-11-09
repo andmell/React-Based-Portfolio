@@ -35,8 +35,8 @@ export default function MediaCard({project}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Github</Button>
-        <Button size="small">Deployed Site</Button>
+        <Button size="small" href={project.linkGit}>Github Repository</Button>
+        {project.linkDepl === "" ? (""):(<Button size="small" href={project.linkDepl}>Deployed Site</Button>)}
       </CardActions>
     </Card>
     </div>
