@@ -1,8 +1,11 @@
+import facebook from "../assets/facebookicon.png";
+import github from "../assets/github-logo.png";
+import linkedin from "../assets/linkedinicon.png";
 
 const socials = [
-    { link: "https://github.com/andmell", icon: "src/assets/github-logo.png" },
-    { link: "https://www.linkedin.com/in/andrew-mell-959b5815b/", icon: "src/assets/linkedinicon.png" },
-    { link: "https://www.facebook.com/profile.php?id=61552733397767&mibextid=LQQJ4d", icon: "src/assets/facebookicon.png" },
+    { link: "https://github.com/andmell", icon: github },
+    { link: "https://www.linkedin.com/in/andrew-mell-959b5815b/", icon: linkedin },
+    { link: "https://www.facebook.com/profile.php?id=61552733397767&mibextid=LQQJ4d", icon: facebook },
   ];
 
 export default function Footer(){
