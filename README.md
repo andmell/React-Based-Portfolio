@@ -5,4 +5,7 @@ This portfolio was built using React as a templating engine, with Tailwind as a 
 ## Usage
 Feel free to visit the site deployed on Netlify [here](https://main--classy-dragon-e9a5cd.netlify.app/). 
 ## Credits
-
+- Tutoring from Jude Clark
+- Documentation on React
+- Material UI components
+- Tailwind Documentation
