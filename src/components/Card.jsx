@@ -19,7 +19,7 @@ import Typography from '@mui/material/Typography';
 
 export default function MediaCard({project}) {
   return (
-    <div className="p-10">
+    <div className="p-10 hover:animate-pulse">
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}

@@ -5,10 +5,9 @@ import Header from "./components/Header"
 function App() {
   return (
     <div className='min-h-screen flex flex-col'>
-      <Header />
-      <div className="bg-blue-300 flex"><Nav /></div>
-      <div className='grow bg-blue-950'><Outlet/></div>
-      <div className="bg-blue-300"><Footer /></div>
+      <div className=""><Nav /></div>
+      <div className='grow'><Outlet/></div>
+      <div className=""><Footer /></div>
     </div>
   );
 }
