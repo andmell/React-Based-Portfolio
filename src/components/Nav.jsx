@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import mypic from "../assets/Self Photo sq.jpg";
 const links = [
+  { text: "Home", slug: "/home"},
   { text: "About", slug: "/" },
   { text: "Portfolio", slug: "/portfolio" },
   { text: "Contact", slug: "/contact" },
