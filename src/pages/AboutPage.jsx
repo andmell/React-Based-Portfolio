@@ -1,5 +1,6 @@
 import { socials } from '../utils/Socials';
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import './aboutpage.css';
 
 export default function AboutPage() {
   return (
@@ -13,8 +14,8 @@ export default function AboutPage() {
             </ul>
         </div>
         <div className="col-span-5 col-start-2 text-center">
-          <h3 className="text-6xl text-white ">Hi there, I'm Andrew 👋</h3>
-          <p className="pt-5 text-white text-xl">
+          <h3 className="text-6xl text-white headerFadeIn">Hi there, I'm Andrew 👋</h3>
+          <p className="pt-5 text-white text-xl pFadeIn">
             A full stack developer with a passion for learning and creating,
             focused on building responsive, accessible, and intuitive user
             experiences.
