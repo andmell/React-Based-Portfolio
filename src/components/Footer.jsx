@@ -1,14 +1,12 @@
-import {socials} from "../utils/Socials";
+import { Link } from "react-router-dom";
+import './footer.css';
 
 export default function Footer(){
     return (
-        <div className='footer'>
-            <ul className='flex flex-row justify-center'>
-                {socials.map((social) => (
-                    // <a href={social.link}><li className="p-2">{social.text}</li></a>
-                    <a href={social.link}><li className="p-2"><img className="w-12 h-12 hover:animate-pulse" src={social.icon}/></li></a>
-                ))}
-            </ul>
+        <div className='flex footer justify-center items-center'>
+            <div className="text-white">
+                <p>Made by <span className="underline"><Link to='/'>Andrew Mell</Link></span></p>
+            </div>
         </div>
     );
 }

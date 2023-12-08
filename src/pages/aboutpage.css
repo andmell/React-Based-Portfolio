@@ -4,12 +4,40 @@
     animation-fill-mode: forwards;
 }
 
-.pFadeIn {
+.pFadeIn{
     opacity: 0;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-delay: 2s;
+}
+
+.projectButton{
+    opacity: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.7s;
+    transition: top ease 0.2s;
+    position: relative;
+    top: 0px;
+
+}
+
+.projectButton:hover{
+    background-color: #f2f2f2;
+    color: #000;
+    top: -5px;
+}
+
+.socialIcon{
+    transition: right ease 0.2s;
+    position: relative;
+    right: 0px;
+}
+
+.socialIcon:hover{
+    right: -5px;
 }
  
 @keyframes fadeInAnimation {
