@@ -12,7 +12,9 @@ export default function Nav() {
   return (
     <nav className="border-b-2 relative flex justify-between">
       <div className="nav-left flex items-center">
+        <Link to="/">
         <img src={mypic} className="w-16 my-3 ml-5 rounded-full items-center" />
+        </Link>
         <h2 className="text-2xl pl-5 font-semibold">
           Andrew Mell
         </h2>
