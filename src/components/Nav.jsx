@@ -21,8 +21,9 @@ export default function Nav() {
       </div>
       <div className="nav-right flex items-center">
         <ul className="flex flex-row pr-5">
-          {links.map((link) => (
+          {links.map((link, index) => (
             <li
+              key={index}
               className={
                 location.pathname === link.slug
                   ? "active px-5 p-2 bg-gray-300 rounded-lg"

@@ -46,8 +46,8 @@ const projects = [
 ]
 export default function PortfolioPage() {
   return (
-    <div>
-      <h2 className="text-center text-3xl">Projects</h2>
+    <div id='body'>
+      <h2 className="text-center text-3xl text-white">Projects</h2>
       <div class='grid grid-cols-3'>
         {projects.map((project) => {
           return <Card project={project}/>
