@@ -1,7 +1,37 @@
-p {
+p, h3, h4 {
     font-family: Arial, sans-serif;
     font-size: 20px;
     line-height: 1.5;
     color: #c5c5c5;
     margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    opacity: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+.skillBox{
+    opacity: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: top ease 0.2s;
+    position: relative;
+    top: 0px;
+
+}
+
+.skillBox:hover{
+    top: -5px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+};
