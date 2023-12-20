@@ -14,16 +14,16 @@ import "./card.css";
 
 export default function MediaCard({ project }) {
   return (
-    <div className="grid grid-cols-6 border rounded mb-10 mx-10">
-      <div className="col-start-1 col-span-1">
+    <div className="grid grid-cols-6 rounded mb-10 mx-10">
+      <div className="col-start-1 col-span-2 flex items-center justify-end">
         <img className="" src={project.imgSrc} />
       </div>
-      <div className="col-start-3 col-span-3 border">
-        <h4 className="text-center">{project.title}</h4>
+      <div className="col-start-3 col-span-3  items-center ml-5">
+        <h4 className="text-left text-3xl font-bold">{project.title}</h4>
         <div className="description">
           <p>{project.text}</p>
         </div>
-        <div className="skillsUsed">
+        <div className="skillsUsed ">
           <p>Skills Used:</p>
           <ul className="flex flex-wrap">
             {project.skills.map((skill, index) => (
@@ -36,8 +36,8 @@ export default function MediaCard({ project }) {
             ))}
           </ul>
         </div>
-        <div className="direct-buttons flex justify-center items-center">
-          <button className="px-10 p-2 my-10 mx-10 bg-yellow-300 hover:bg-yellow-500 font-bold rounded text-xl projectButton">
+        <div className="direct-buttons flex justify-start items-start">
+          <button className="px-10 p-2 my-10 mr-10 bg-yellow-300 hover:bg-yellow-500 font-bold rounded text-xl projectButton">
             <a href={project.linkGit}>To GitHub</a>
           </button>
 
