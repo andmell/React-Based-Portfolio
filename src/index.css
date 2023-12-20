@@ -24,6 +24,7 @@ nav {
   background-image: url('./assets/wallpaperflare.com_wallpaper.jpg');
   flex-grow: 1;
   min-height: 100vh;
+  background-color: #000;
 }
 /*
 .mainParent {

@@ -21,7 +21,7 @@ export default function AboutMePage() {
           </p>
           <p>
             Outside of coding, I enjoy gardening, playing video games, and spending time with my friends and family. As an ex-horticulturist,
-            I'm very familiar with tenaciously working towards a goal in adverse, stressful conditions. I'm very excited to express that same tenacity not only 
+            I'm very familiar with tenaciously working towards a goal in adverse, stressful conditions. I'm very excited to apply that same tenacity not only 
             in horticulture, but in web development as well. I'm looking forward to working with you!
           </p>
         </div>

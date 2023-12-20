@@ -1,3 +1,5 @@
+import "./card.css";
+
 // export default function Card({project}) {
 //   return (
 //     <div className="cardBox">
@@ -9,36 +11,45 @@
 //     </div>
 //   );
 // }
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 
-export default function MediaCard({project}) {
+export default function MediaCard({ project }) {
   return (
-    <div className="p-10 hover:animate-pulse">
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="https://picsum.photos/600/400"
-        title="random photo"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {project.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {project.text}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" href={project.linkGit}>Github Repository</Button>
-        {project.linkDepl === "" ? (""):(<Button size="small" href={project.linkDepl}>Deployed Site</Button>)}
-      </CardActions>
-    </Card>
+    <div className="grid grid-cols-6 border rounded mb-10 mx-10">
+      <div className="col-start-1 col-span-1">
+        <img className="" src={project.imgSrc} />
+      </div>
+      <div className="col-start-3 col-span-3 border">
+        <h4 className="text-center">{project.title}</h4>
+        <div className="description">
+          <p>{project.text}</p>
+        </div>
+        <div className="skillsUsed">
+          <p>Skills Used:</p>
+          <ul className="flex flex-wrap">
+            {project.skills.map((skill, index) => (
+              <li
+                key={index}
+                className="rounded px-3 py-1 mx-2 bg-gray-700 skillBox"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="direct-buttons flex justify-center items-center">
+          <button className="px-10 p-2 my-10 mx-10 bg-yellow-300 hover:bg-yellow-500 font-bold rounded text-xl projectButton">
+            <a href={project.linkGit}>To GitHub</a>
+          </button>
+
+          {project.linkDepl ? (
+            <button className="px-10 p-2 my-10 bg-yellow-300 hover:bg-yellow-500 font-bold rounded text-xl projectButton">
+              <a href={project.linkDepl}>To Deployed Site</a>
+            </button>
+          ) : (
+            ""
+          )}
+        </div>
+      </div>
     </div>
   );
 }
