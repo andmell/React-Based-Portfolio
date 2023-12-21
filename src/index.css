@@ -21,10 +21,11 @@ nav {
 }
 */
 #body {
-  background-image: url('./assets/wallpaperflare.com_wallpaper.jpg');
+  background: url('./assets/wallpaperflare.com_wallpaper.jpg') no-repeat 0 0 fixed;
+  background-size: cover;
   flex-grow: 1;
   min-height: 100vh;
-  background-color: #000;
+  height: 100%;
 }
 /*
 .mainParent {
