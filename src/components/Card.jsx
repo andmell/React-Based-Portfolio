@@ -15,8 +15,8 @@ import "./card.css";
 export default function MediaCard({ project }) {
   return (
     <div className="grid grid-cols-6 rounded pb-10 mx-10">
-      <div className="col-start-1 col-span-2 flex items-center justify-end">
-        <img className="rounded-xl" src={project.imgSrc} />
+      <div className="col-start-1 col-span-2 flex items-top justify-end">
+        <img className="rounded-xl card-img" src={project.imgSrc} />
       </div>
       <div className="col-start-3 col-span-3  items-center ml-5">
         <h4 className="text-left text-3xl font-bold">{project.title}</h4>
