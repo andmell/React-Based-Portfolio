@@ -42,7 +42,7 @@ export default function ContactPage() {
         </p>
         <form action="#" ref={form} onSubmit={sendEmail}>
           <div className="flex flex-row">
-            <div className="w-1/2 pr-2 ">
+            <div className="w-1/2 pr-3 ">
               <label
                 className="block my-2 text-left  
                       text-sm font-medium text-gray-900"
