@@ -1,17 +1,5 @@
 import "./card.css";
 
-// export default function Card({project}) {
-//   return (
-//     <div className="cardBox">
-//       <img className="cardImg" src={project.imgSrc} />
-//       <h2>{project.title}</h2>
-//       <p>{project.text}</p>
-//       <button>To GitHub</button>
-//       <button>To Deployed Site</button>
-//     </div>
-//   );
-// }
-
 export default function MediaCard({ project }) {
   return (
     <div className="grid grid-cols-6 rounded pb-10 mx-10">

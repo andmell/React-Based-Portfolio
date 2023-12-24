@@ -2,24 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
- /* * {
-  
-  background-size: cover;
-
-} */
-
-/*
-.footer {
-  background-color:rgb(107, 149, 240)
-}
-
-nav {
- background-color:rgb(107, 149, 240)
-}
-.navbar {
-}
-*/
 #body {
   background: url('./assets/wallpaperflare.com_wallpaper.jpg') no-repeat 0 0 fixed;
   background-size: cover;
@@ -27,24 +9,3 @@ nav {
   min-height: 100vh;
   height: 100%;
 }
-/*
-.mainParent {
-  min-height: 100vh;
-  display: flex;
-  flex-direction:column;
-  background-image: url('./assets/wallpaperflare.com_wallpaper.jpg');
-}
-
-.cardBox {
-  border: 2px #333 solid;
-  width: 302px
-}
-
-.projectBody{
-  display: flex;
-}
-
-.cardImg {
-  width: 300px;
-  height: 200px;
-} */
