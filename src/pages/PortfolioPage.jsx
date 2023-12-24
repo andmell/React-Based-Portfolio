@@ -9,7 +9,7 @@ export default function PortfolioPage() {
       <div 
       // className='grid grid-cols-3 border'
       >
-        <ul>
+        <ul className="fadeInAnimation">
         {projects.map((project, index) => {
           return <Card project={project} key={index}/>
         })}

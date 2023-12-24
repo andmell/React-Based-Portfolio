@@ -24,6 +24,19 @@
 
 }
 
+.fadeInAnimation{
+    opacity: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: top ease 0.2s;
+    position: relative;
+    top: 0px;
+
+}
+
+
+
 .projectButton:hover{
     background-color: #f2f2f2;
     color: #000;

@@ -9,7 +9,7 @@ export const projects = [
         linkGit: 'https://github.com/wyattbarger/gamepop-over-under',
         linkDepl: 'https://game-pop-0133abbe0985.herokuapp.com/',
         imgSrc: gamepopimg,
-        skills: ['React', 'MongoDB', 'Express', 'Node.js', 'GraphQL', 'JWT', 'Bcrypt', 'Apollo', 'Semantic UI']
+        skills: ['Apollo', 'Axios', 'Bcrypt', 'DotENV', 'Express', 'GraphQL', 'JWT', 'Mongoose', 'Emotion', 'MUI Library', 'Vite', 'React', 'Node.Js']
     },
     {
       title: 'Stock Flocker',
@@ -17,7 +17,7 @@ export const projects = [
       linkGit: 'https://github.com/wyattbarger/stock-flocker',
       linkDepl: 'https://shrouded-coast-42223-a6c05e1c3810.herokuapp.com/',
       imgSrc: stockflockerimg,
-      skills: ['React', 'MongoDB', 'Express', 'Node.js', 'GraphQL', 'JWT', 'Bcrypt', 'Apollo', 'Semantic UI']
+      skills: ['Bcrypt', 'Bulma', 'Sequelize', 'Node.js', 'DotENV', 'Express', 'Handlebars', 'MySQL']
     },
     {
       title: 'Mongo Social Media API',
@@ -25,6 +25,6 @@ export const projects = [
       linkGit: 'https://github.com/andmell/Mongo-Social-Media-API',
       linkDepl: '',
       imgSrc: mongoPic,
-      skills: ['React', 'MongoDB', 'Express', 'Node.js', 'GraphQL', 'JWT', 'Bcrypt', 'Apollo', 'Semantic UI']
+      skills: ['NoSQL', 'MongoDB', 'Express', 'Node.js', 'Mongoose', 'DayJS', ]
     },
 ];
