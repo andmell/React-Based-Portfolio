@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
+  const [message, setMessage] = useState("");
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -17,9 +18,12 @@ export default function ContactPage() {
       .then(
         (result) => {
           console.log(result.text);
+          form.current.reset();
+          setMessage("E-mail sent! I'll get in touch soon!");
         },
         (error) => {
           console.log(error.text);
+          setMessage("Something went wrong. Please try again.");
         }
       );
   };
@@ -135,6 +139,7 @@ export default function ContactPage() {
             Send message
           </button>
         </form>
+        {message && <p className="text-green-500">{message}</p>}
       </div>
     </div>
   );
