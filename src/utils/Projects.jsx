@@ -5,7 +5,7 @@ import mongoPic from '../assets/mongocreateuser (1).png';
 export const projects = [
     {
         title: 'Game Pop',
-        text: 'A simple full stack game that users can play to determine if a game is rated higer or lower than a comparison game.',
+        text: 'A simple full stack game that users can play to determine if a game is rated higher or lower than a comparison game.',
         linkGit: 'https://github.com/wyattbarger/gamepop-over-under',
         linkDepl: 'https://game-pop-0133abbe0985.herokuapp.com/',
         imgSrc: gamepopimg,
